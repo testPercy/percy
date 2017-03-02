@@ -8,5 +8,5 @@ Rails.application.routes.draw do
 
   resources :users
 
-  root "todos#index"
+  root "users#index"
 end

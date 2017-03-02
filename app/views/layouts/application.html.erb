@@ -11,7 +11,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<ul>
+  <li>
+    <%= link_to users_path %>
+    <%= link_to todos_path %>
+  </li>
+</ul>
 <%= yield %>
 
 <% cache('footer') do %>
