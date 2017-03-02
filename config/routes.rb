@@ -1,12 +1,6 @@
 Rails.application.routes.draw do
-  resources :todos, only: [:index, :create, :update, :destroy], :path => '' do
-    collection do
-      put :update_many
-      delete :destroy_many
-    end
-  end
-
-  resources :users
+  resources :users, only: [:index]
+  resources :todos, only: [:index]
 
   root "users#index"
 end
